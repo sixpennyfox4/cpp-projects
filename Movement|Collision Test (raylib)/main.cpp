@@ -10,7 +10,7 @@ struct Player {
 	int speed{};
 };
 
-float getRandomNumber(int min, int max) {
+int getRandomNumber(int min, int max) {
 	std::mt19937 mt{ std::random_device{}() };
 
 	return std::uniform_int_distribution{ min, max }(mt);
@@ -18,7 +18,7 @@ float getRandomNumber(int min, int max) {
 
 void randomCircles(std::vector<Vector2>& circlesA, int count) {
 	for (int i{ 1 }; i <= count; ++i) {
-		circlesA.push_back({ getRandomNumber(10, 480), getRandomNumber(10, 480) });
+		circlesA.push_back({ (float)getRandomNumber(10, 480), (float)getRandomNumber(10, 480) });
 	}
 }
 
