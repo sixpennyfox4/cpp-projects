@@ -16,7 +16,7 @@ float getRandomNumber(int min, int max) {
 	return std::uniform_int_distribution{ min, max }(mt);
 }
 
-void randomCircles(std::vector<Vector2>& circlesA, int count) {
+void randomCircles(const std::vector<Vector2>& circlesA, int count) {
 	for (int i{ 1 }; i <= count; ++i) {
 		circlesA.push_back({ getRandomNumber(10, 480), getRandomNumber(10, 480) });
 	}
