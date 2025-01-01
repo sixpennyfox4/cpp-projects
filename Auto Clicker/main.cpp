@@ -18,7 +18,8 @@ int main() {
 			SendInput(1, &input, sizeof(input));
 		}
 
-		if (GetAsyncKeyState(VK_F7)) {
+		/* KEYBOARD AUTOCLICK (change 'd' to the key you want)
+  		if (GetAsyncKeyState(VK_F7)) {
 			INPUT input = { 0 };
 			input.type = INPUT_KEYBOARD;
 			input.ki.wVk = VkKeyScanA('d');
@@ -28,7 +29,7 @@ int main() {
 
 			input.ki.dwFlags = KEYEVENTF_KEYUP;
 			SendInput(1, &input, sizeof(input));
-		}
+		}*/
 	}
 
 	return 0;
