@@ -22,7 +22,7 @@ bool playAgain() {
 
 void mainGame(int tries, const std::vector<std::string>& words) {
 	std::mt19937 mt{ std::random_device{}() };
-	int rN{ std::uniform_int_distribution<int>{ 0, static_cast<int>(words.size() - 1) }(mt)};
+	int rN{ std::uniform_int_distribution<int>{ 0, static_cast<int>(words.size() - 1) }(mt) };
 	std::string chosenWord{ words[static_cast<std::size_t>(rN)] };
 
 	std::vector<bool> cCheck{};
@@ -34,12 +34,16 @@ void mainGame(int tries, const std::vector<std::string>& words) {
 	while (true) {
 		system("cls");
 		if (tries == 0) {
+			std::cout << "The word was " << chosenWord << '\n';
 			std::cout << "You lost!\n";
+
 			break;
 		}
 
 		if (guessedChars == chosenWord.size()) {
+			std::cout << "The word was " << chosenWord << '\n';
 			std::cout << "You win!\n";
+
 			break;
 		}
 
