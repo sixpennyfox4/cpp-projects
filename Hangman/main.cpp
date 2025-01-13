@@ -79,7 +79,7 @@ void mainGame(int tries, const std::vector<std::string>& words) {
 
 int main() {
 	constexpr int tries{ 5 };
-	const std::vector<std::string> wList{ "gun", "star", "diddy" };
+	const std::vector<std::string> wList{ "gun", "star", "diddy", "apple", "banana", "elephant", "kangaroo", "tiger", "guitar", "planet", "umbrella", "candle", "bridge", "pyramid", "moonlight", "bicycle", "window", "rainbow", "journey", "drake" };
 
 	do {
 		mainGame(tries, wList);
