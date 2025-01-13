@@ -34,14 +34,14 @@ void mainGame(int tries, const std::vector<std::string>& words) {
 	while (true) {
 		system("cls");
 		if (tries == 0) {
-			std::cout << "The word was " << chosenWord << '\n';
+			std::cout << "The word was " << chosenWord << ".\n";
 			std::cout << "You lost!\n";
 
 			break;
 		}
 
 		if (guessedChars == chosenWord.size()) {
-			std::cout << "The word was " << chosenWord << '\n';
+			std::cout << "The word was " << chosenWord << ".\n";
 			std::cout << "You win!\n";
 
 			break;
