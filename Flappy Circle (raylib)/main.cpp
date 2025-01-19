@@ -51,7 +51,7 @@ int main() {
 	Vector2 circlePos{ static_cast<float>(width / 2), static_cast<float>(height / 2) };
 	while (!WindowShouldClose() && !gameOver) {
 		BeginDrawing();
-		ClearBackground(RAYWHITE);
+		ClearBackground(SKYBLUE);
 
 		for (Tube& t : tubes) {
 			t.top.x -= 5;
@@ -78,7 +78,7 @@ int main() {
 			circlePos.y = static_cast<float>(height);
 		}
 
-		DrawCircleV(circlePos, 20.0f, BLUE);
+		DrawCircleV(circlePos, 20.0f, YELLOW);
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(80));
 		EndDrawing();
