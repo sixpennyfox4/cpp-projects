@@ -37,11 +37,11 @@ void mainGame(int tries) {
 			return;
 		}
 		else if (guess < number) {
-			std::cout << "Less\n";
+			std::cout << "Low\n";
 			continue;
 		}
 		else if (guess > number) {
-			std::cout << "More\n";
+			std::cout << "High\n";
 			continue;
 		}
 	}
